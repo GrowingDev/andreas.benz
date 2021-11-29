@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "FivoSans Thin";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("~assets/fonts/FivoSans-Thin.otf")
+    }
+    @font-face {
+        font-family: "FivoSans Light";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("~assets/fonts/FivoSans-Light.otf")
+    }
+    @font-face {
+        font-family: "FivoSans Medium";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("~assets/fonts/FivoSans-Medium.otf")
+    }
+    @font-face {
+        font-family: "FivoSans Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("~assets/fonts/FivoSans-Regular.otf")
+    }
+}
