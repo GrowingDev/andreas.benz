@@ -7,19 +7,26 @@ a {
 a.link {
   position: relative;
   cursor: pointer;
+  color:#929292;
 }
 a.link::before {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: #000;
+
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
+a.link:hover {
+    color:black;
+    transition: color ease-out 400ms;
+}
 a.link:hover:before {
+    color:black;
   visibility: visible;
   width: 100%;
 }
