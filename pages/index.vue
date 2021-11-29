@@ -3,7 +3,9 @@
     <NavigationBar />
  
 
-
+<h1 class="header">We create architecture,
+  landscapes, interiors, product design and graphic design.
+</h1>
   </div>
 </template>
 
