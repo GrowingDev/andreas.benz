@@ -4,10 +4,10 @@
   >
     <a>andreas.benz</a>
     <div class="hidden md:flex justify-between items-center space-x-4">
-      <a>projects</a>
-      <a>andreas.benz</a>
-      <a>projects</a>
-      <a>contact</a>
+      <a class="link">projects</a>
+      <a class="link">skills</a>
+      <a class="link">about</a>
+      <a class="link">contact</a>
     </div>
   </div>
 </template>
