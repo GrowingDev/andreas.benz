@@ -17,6 +17,7 @@ a.link {
   cursor: pointer;
   color:#929292;
 }
+
 a.link::before {
   content: '';
   position: absolute;
