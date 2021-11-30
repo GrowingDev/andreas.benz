@@ -12,7 +12,7 @@
     </div>
     <Divider title="Projects" />
     <div class="w-full flex flex-row flex-wrap justify-end py-4">
-   <div class=" w-full md:w-5/12 md:ml-4 my-2 flex flex-col">
+   <div class=" w-full md:w-4/12  md:ml-4 my-2 flex flex-col">
         <div class="w-full h-80 bg-gray-300">
           <img src="https://picsum.photos/400/400" class="h-80 w-full" />
         </div>
@@ -20,14 +20,14 @@
         <a class="link w-max">read more</a>
 </div>
 
-      <div class=" w-full md:w-5/12 md:ml-4 my-2 flex flex-col">
+      <div class=" w-full md:w-4/12 md:ml-4 my-2 flex flex-col">
         <div class="w-full h-80 bg-gray-300">
           <img src="https://picsum.photos/400/400" class="h-80 w-full" />
         </div>
         <p class="text-base">Lorem ipsum dolorem ese de lari</p>
         <a class="link w-max">read more</a>
 </div>
-       <div class=" w-full md:w-5/12 md:ml-4 my-2 flex flex-col">
+       <div class=" w-full md:w-4/12 md:ml-4 my-2 flex flex-col">
         <div class="w-full h-80 bg-gray-300">
           <img src="https://picsum.photos/400/400" class="h-80 w-full" />
         </div>
