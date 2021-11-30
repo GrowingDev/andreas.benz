@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-5/12 xl:w-4/12 md:ml-4 my-3 flex flex-col">
+  <div class="w-full md:w-5/12 xl:w-4/12 md:ml-4 mt-3 mb-5 flex flex-col">
     <div class="w-full bg-gray-300">
       <img src="https://picsum.photos/400/400" class="h-60 lg:h-60 w-full" />
     </div>
