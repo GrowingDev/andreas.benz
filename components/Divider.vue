@@ -7,9 +7,8 @@
 </template>
 <script>
 export default {
-    props: {
-        title: String
-    }
+    name: "Divider",
+    props: ['title'],
 }
 </script>
 <style>
