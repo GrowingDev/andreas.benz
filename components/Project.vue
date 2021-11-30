@@ -3,7 +3,7 @@
     <div class="w-full bg-gray-300">
       <img src="https://picsum.photos/400/400" class="h-60 lg:h-60 w-full" />
     </div>
-    <p class="text-base py-1">
+    <p class="text-base py-2">
       Our working method practices a simultaneous exploration of traditional
       handicraft and cutting edge digital technology
     </p>
