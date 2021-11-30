@@ -11,11 +11,27 @@
       </h1>
     </div>
     <Divider title="Projects" />
-    <div class="container h-screen w-full flex flex-col justify-center">
-      <h1>
-        We create architecture, landscapes, interiors, product design and
-        graphic design.
-      </h1>
+    <div class="w-full flex flex-row flex-wrap justify-end py-4">
+      <div class="w-full md:w-5/12">
+        <div class="w-full h-80 bg-gray-300">
+          <img src="https://picsum.photos/400/400" class="h-80 w-full" />
+        </div>
+        <p class="text-base">Lorem ipsum dolorem ese de lari</p>
+      </div>
+
+      <div class="w-full md:w-5/12 md:ml-4">
+        <div class="w-full h-80 bg-gray-300">
+          <img src="https://picsum.photos/400/400" class="h-80 w-full" />
+        </div>
+        <p class="text-base">Lorem ipsum dolorem ese de lari</p>
+      </div>
+
+       <div class="w-full md:w-5/12 md:ml-4">
+        <div class="w-full h-80 bg-gray-300">
+          <img src="https://picsum.photos/400/400" class="h-80 w-full" />
+        </div>
+        <p class="text-base">Lorem ipsum dolorem ese de lari</p>
+      </div>
     </div>
     <Divider title="Skills" />
   </div>
