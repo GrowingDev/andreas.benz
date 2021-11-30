@@ -1,19 +1,21 @@
 <template>
-  <div class=" container-sm lg:w-10/12 px-1 md:px-8  mx-auto">
+  <div class=" px-3 w-full md:w-11/12 lg:w-10/12 xl:w-8/12 md:mx-auto flex flex-col justify-start">
     <NavigationBar />
-<<<<<<< HEAD
  
-<div class="container lg:w-8/12 h-full">
-=======
-
-<div class="md:w-7/12  my-16 md:my-32 xl:my-40">
->>>>>>> c5ce99eb3705cf8b612d548119990696c3d770a3
-<h1>We create architecture,
+<div class="container h-screen w-full flex flex-col justify-center">
+<h1 >We create architecture,
   landscapes, interiors, product design and graphic design.
 </h1>
-<h2>Projects</h2>
-</div>
 
+</div>
+<Divider title="Projects"/>
+<div class="container h-screen w-full flex flex-col justify-center">
+<h1 >We create architecture,
+  landscapes, interiors, product design and graphic design.
+</h1>
+
+</div>
+<Divider title="Skills"/>
 
 
   </div>
@@ -24,11 +26,5 @@ export default {}
 </script>
 
 <style>
-.frame {
-  position:absolute;
-  top: 0;
-  left:0;
-  height:100vh;
-  background:gray;
-}
+
 </style>
