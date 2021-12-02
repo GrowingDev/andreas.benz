@@ -1,6 +1,15 @@
 <template>
   <div
-    class="px-3 w-full md:w-11/12 lg:w-10/12 xl:w-8/12 md:mx-auto flex flex-col justify-start"
+    class="
+      px-3
+      w-full
+      md:w-11/12
+      lg:w-10/12
+      xl:w-8/12
+      md:mx-auto
+      flex flex-col
+      justify-start
+    "
   >
     <NavigationBar />
 
@@ -10,14 +19,20 @@
         graphic design.
       </h1>
     </div>
-    <Divider title="Projects" />
-    <div class="w-full flex flex-row flex-wrap justify-end py-3">
+    <Divider title="Projekte" />
+    <div class="w-full flex flex-row flex-wrap justify-end py-3 mb-60">
       <Project />
       <Project />
       <Project />
       <Project />
     </div>
-    <Divider title="Skills" />
+    <Divider title="Kompetenzen" />
+    <Experience title="UI/UX Design" />
+    <Experience title="Software Entwicklung" />
+    <Experience title="Projekt Management" />
+    <Experience title="Elektrotechnik" />
+    <Divider title="Über mich" />
+    <Divider title="Kontakt" />
   </div>
 </template>
 

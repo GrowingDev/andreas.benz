@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 @layer base{
+
     @font-face {
-        font-family: "FivoSans Thin";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url("~assets/fonts/FivoSans-Thin.otf")
-    }
+      font-family: "FivoSans Thin";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("~assets/fonts/FivoSans-Thin.otf")
+  }
     @font-face {
         font-family: "FivoSans Light";
         font-style: normal;
@@ -31,4 +32,11 @@
         font-display: swap;
         src: url("~assets/fonts/FivoSans-Regular.otf")
     }
+    @font-face {
+      font-family: "FivoSans Bold";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("~assets/fonts/FivoSans-Bold.otf")
+  }
 }

@@ -1,23 +1,31 @@
 <template>
-  <nav class="w-full py-4 sticky top-0 inline-block z-10 bg-white">
+  <nav
+    class="w-full py-4 sticky top-0 inline-block z-10 bg-white overflow-hidden"
+  >
     <div class="flex justify-between items-center">
       <a>andreas.benz</a>
       <div class="hidden md:flex justify-between items-center space-x-5">
-        <a class="link">projects</a>
-        <a class="link">skills</a>
-        <a class="link">about</a>
-        <a class="link">contact</a>
+        <a class="link lowercase" v-for="link in links" :key="link">{{ link }}</a>
       </div>
-      <a class="md:hidden underline cursor-pointer" @click="setVisible">menu</a>
+      <a class="md:hidden underline cursor-pointer" @click="setVisible">Menü</a>
     </div>
     <ul
-    v-if="visible"
-      class="flex flex-col pt-8 justifyspace-y-5 relative top-0 bottom-0 h-screen w-screen bg-white"
+      v-if="visible"
+      class="
+        flex flex-col
+        pt-8
+        justifyspace-y-5
+        relative
+        top-0
+        bottom-0
+        h-screen
+        w-screen
+        bg-white
+      "
     >
-      <li><a class="link text-2xl">projects</a></li>
-      <li><a class="link text-2xl">skills</a></li>
-      <li><a class="link text-2xl">about</a></li>
-      <li><a class="link text-2xl">contact</a></li>
+      <li>
+        <a class="link text-2xl my-4" v-for="link in links" :key="link">{{ link }}</a>
+      </li>
     </ul>
   </nav>
 </template>
@@ -27,13 +35,14 @@ export default {
   data: () => {
     return {
       visible: false,
+      links: ['Projekte', 'Kompetenzen', 'Über mich', 'Kontakt'],
     }
   },
   methods: {
-    setVisible(){
+    setVisible() {
       this.visible = !this.visible
-    }
-  }
+    },
+  },
 }
 </script>
 <style>
