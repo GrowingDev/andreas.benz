@@ -55,7 +55,7 @@
       "
     >
       <li v-for="link in links" :key="link">
-        <a class="link text-2xl my-4" :href="'#' + link">{{ link }}</a>
+        <a class="link text-2xl my-4" :href="'#' + link" @click="setVisible">{{ link }}</a>
       </li>
     </ul>
   </nav>
