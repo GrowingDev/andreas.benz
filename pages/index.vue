@@ -73,8 +73,8 @@
     <Divider title="Kontakt" />
     <div class="text-center  w-full flex flex-col justify-v´center text-center ">
 
-      <a class="underline mt-40" href="#">andreas.benz.privat@icloud.com</a>
- <a href="#" class="mt-10 mb-40">+ 43 01660 345 231 23</a>
+      <a class="underline mt-40" href="mailto:andreas.benz.privat@icloud.com">andreas.benz.privat@icloud.com</a>
+ <a href="tel:+436706045373" class="mt-10 mb-40">+ 43 670 6045373</a>
     </div>
   </div>
 </template>
