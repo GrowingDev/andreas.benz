@@ -4,9 +4,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'gd-landingpage',
+    title: 'andreas.benz',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'de'
     },
     meta: [
       { charset: 'utf-8' },
@@ -26,6 +26,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -36,6 +37,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
@@ -43,10 +45,12 @@ export default {
     config: {},
     injectPosition: 0,
   },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
