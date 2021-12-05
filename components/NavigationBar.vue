@@ -5,7 +5,7 @@
     <div class="flex justify-between items-center">
       <a>andreas.benz</a>
       <div class="hidden md:flex justify-between items-center space-x-5">
-        <a class="link lowercase" v-for="link in links" :key="link">{{ link }}</a>
+        <a class="link lowercase" v-for="link in links" :key="link" :href="'#' + link">{{ link }}</a>
       </div>
       <a class="md:hidden underline cursor-pointer" @click="setVisible">Menü</a>
     </div>
@@ -24,7 +24,7 @@
       "
     >
       <li>
-        <a class="link text-2xl my-4" v-for="link in links" :key="link">{{ link }}</a>
+        <a class="link text-2xl my-4" v-for="link in links" :key="link" :href="'#' + link">{{ link }}</a>
       </li>
     </ul>
   </nav>
