@@ -20,7 +20,7 @@
       </h1>
     </div>
     <Divider title="Projekte" id="Projekte" />
-    <div class="w-full flex flex-row flex-wrap justify-end py-3 mb-60">
+    <div class="w-full flex flex-row flex-wrap justify-end pt-6 mb-60">
       <Project />
       <Project />
       <Project />
