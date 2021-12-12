@@ -20,7 +20,7 @@
       </h1>
     </div>
     <Divider title="Projekte" id="Projekte" />
-    <div class="w-full flex flex-row flex-wrap justify-end pt-6 mb-40 w-min-screen">
+    <div class="w-full flex flex-row flex-wrap justify-end mb-40 w-min-screen">
       <Project v-for="project in projects" :key="project.title" :project="project" />
 
     </div>
@@ -38,7 +38,7 @@
     <div
       class="
         w-full
-        py-5
+
         mb-40
         inline-block
         md:flex md:flex-row md:flex-nowrap
@@ -49,7 +49,7 @@
         src="https://picsum.photos/400/400"
         class="h-120 w-full md:w-4/12 lg:w-3/12 max-h-80"
       />
-      <p class="pt-2 md:pt-0 md:pl-4 text-justify lg:w-5/12">
+      <p class=" md:pt-0 md:pl-4 text-justify lg:w-5/12">
         Our working method practices a simultaneous exploration of traditional
         handicraft and cutting edge digital technology. Our working method
         practices a simultaneous exploration of traditional handicraft and
@@ -70,7 +70,7 @@
     </div>
     <Divider title="Kontakt" id="Kontakt" />
     <div class="text-center w-full flex flex-col justify-v´center ">
-      <a class="underline mt-40" href="mailto:andreas.benz.privat@icloud.com"
+      <a class="underline mt-20" href="mailto:andreas.benz.privat@icloud.com"
         >andreas.benz.privat@icloud.com</a
       >
       <a href="tel:+436706045373" class="mt-10">+ 43 670 6045373</a>
