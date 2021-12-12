@@ -112,7 +112,7 @@ export default {
         },
         {
           image: "logo-red_assistant",
-          title: "Etablierung einer ressourcenbasierten Ökonomie",
+          title: "Assistenzsystem für Covid-19 Impfstraßen",
           content:"Our working method practices a simultaneous exploration of traditional handicraft and cutting edge digital technology"
         }
       ]
