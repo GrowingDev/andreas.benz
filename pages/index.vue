@@ -20,14 +20,12 @@
       </h1>
     </div>
     <Divider title="Projekte" id="Projekte" />
-    <div class="w-full flex flex-row flex-wrap justify-end pt-6 mb-60">
-      <Project />
-      <Project />
-      <Project />
-      <Project />
+    <div class="w-full flex flex-row flex-wrap justify-end pt-6 mb-40 w-min-screen">
+      <Project v-for="project in projects" :key="project.title" :project="project" />
+
     </div>
     <Divider title="Kompetenzen" id="Kompetenzen" />
-    <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 mb-60">
+    <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 mb-40">
       <Experience title="UI/UX Design" />
       <Experience title="Software Entwicklung" />
       <Experience title="Projekt Management" />
@@ -41,7 +39,7 @@
       class="
         w-full
         py-5
-        mb-60
+        mb-40
         inline-block
         md:flex md:flex-row md:flex-nowrap
         lg:justify-end
@@ -71,7 +69,7 @@
       </p>
     </div>
     <Divider title="Kontakt" id="Kontakt" />
-    <div class="text-center w-full flex flex-col justify-v´center text-center">
+    <div class="text-center w-full flex flex-col justify-v´center ">
       <a class="underline mt-40" href="mailto:andreas.benz.privat@icloud.com"
         >andreas.benz.privat@icloud.com</a
       >
@@ -103,7 +101,24 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data: () => {
+    return {
+      projects: [
+        {
+          image: "logo-aiyana",
+          title: "Etablierung einer ressourcenbasierten Ökonomie",
+          content:"Our working method practices a simultaneous exploration of traditional handicraft and cutting edge digital technology"
+        },
+        {
+          image: "logo-red_assistant",
+          title: "Etablierung einer ressourcenbasierten Ökonomie",
+          content:"Our working method practices a simultaneous exploration of traditional handicraft and cutting edge digital technology"
+        }
+      ]
+    }
+  },
+}
 </script>
 
 <style></style>

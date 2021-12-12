@@ -1,12 +1,19 @@
 <template>
-  <div class="w-full md:w-5/12 xl:w-5/12 md:ml-4 mt-3 mb-5 flex flex-col">
-    <div class="w-full bg-gray-300">
-      <img src="https://picsum.photos/400/400" class="h-60 lg:h-60 w-full" />
+  <div class="w-full md:w-5/12 xl:w-5/12 md:ml-8 mt-3 mb-5 flex flex-col">
+    <div class="w-full ">
+
+      <img :src="require(`~/assets/imgs/${project.image}.png`)" class="m-auto"/>
     </div>
-    <p class="text-base pt-6">
-      Our working method practices a simultaneous exploration of traditional
-      handicraft and cutting edge digital technology
+    <h3 class="pt-4">{{project.title}}</h3>
+    <p class="text-base ">
+      {{project.content}}
     </p>
     <a class="link w-max " href="https://google.com">read more &#8594;</a>
   </div>
 </template>
+
+<script>
+export default {
+  props: ["project"]
+}
+</script>
