@@ -29,8 +29,7 @@
     </div>
     <Divider title="Kompetenzen" id="Kompetenzen" />
     <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 mb-40">
-      <Experience :skill="skill" v-for="skill in skills" :key="skill.title"/>
-
+      <Experience :skill="skill" v-for="skill in skills" :key="skill.title" />
     </div>
 
     <Divider title="Über mich" id="Über mich" />
@@ -104,18 +103,19 @@ export default {
     return {
       skills: [
         {
-          title: 'Energie- und Gebäudetechnik',
-          description: 'Als Elektroniker für Energie und Gebäudetechnik, verfüge ich über fundierte Fachkenntnisse im Bereich der Photovoltaik, ',
+          title: 'Analytisches Denken',
+          description:
+            'Es fällt mir leicht, als Elektroniker für Energie und Gebäudetechnik, technische Zusammenhänge zu erkennen sowie verständlich zu erklären.',
         },
         {
           title: 'Software-Entwicklung',
           description:
-            'Ich entwickle mit Leidenschaft digitale Lösungen ',
+            'Ich entwickle mit Leidenschaft digitale Lösungen für die Probleme uns',
         },
         {
           title: 'Agiles Projektmanagement',
           description:
-            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+            'Aufgrund meiner hohen Anpassungsfähigkeit reagiere ich schnell und zielgerichtet auf neue Herausforderungen.',
         },
         {
           title: 'Design Thinking',
