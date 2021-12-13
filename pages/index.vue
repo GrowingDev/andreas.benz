@@ -15,7 +15,7 @@
 
     <div class="container h-screen w-full flex flex-col justify-center">
       <h1>
-        Ich liebe Nachhaltigkeit, Minimalismus, neue Technologien und coole
+        Ich liebe Minimalismus, neue Technologien, Nachhaltigkeit und coole
         Projekte.
       </h1>
     </div>
@@ -29,7 +29,7 @@
     </div>
     <Divider title="Kompetenzen" id="Kompetenzen" />
     <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 mb-40">
-      <Experience :title="skill.title" v-for="skill in skills" :key="skill.title"/>
+      <Experience :skill="skill" v-for="skill in skills" :key="skill.title"/>
 
     </div>
 
@@ -104,32 +104,32 @@ export default {
     return {
       skills: [
         {
-          title: 'Web-Entwicklung',
-          content: 'Ich entwickle minimalistische Web-Anwendungen nach Maß',
+          title: 'Energie- und Gebäudetechnik',
+          description: 'Als Elektroniker für Energie und Gebäudetechnik, verfüge ich über fundierte Fachkenntnisse im Bereich der Photovoltaik, ',
         },
         {
-          title: 'UI/UX Design',
-          content:
-            'Gelungene UX bedeutet für mich, die exakten Wünsche des Kunden zu erfüllen.',
+          title: 'Software-Entwicklung',
+          description:
+            'Ich entwickle mit Leidenschaft digitale Lösungen ',
         },
         {
           title: 'Agiles Projektmanagement',
-          content:
+          description:
             'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
         },
         {
           title: 'Design Thinking',
-          content:
+          description:
             'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
         },
         {
           title: 'Vertrieb',
-          content:
+          description:
             'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
         },
         {
           title: 'Marktanalysen',
-          content:
+          description:
             'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
         },
       ],
