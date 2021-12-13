@@ -15,30 +15,35 @@
 
     <div class="container h-screen w-full flex flex-col justify-center">
       <h1>
-        We create architecture, landscapes, interiors, product design and
-        graphic design.
+        Ich liebe Nachhaltigkeit, Minimalismus, neue Technologien und coole
+        Projekte.
       </h1>
     </div>
     <Divider title="Projekte" id="Projekte" />
     <div class="w-full flex flex-row flex-wrap justify-end mb-40 w-min-screen">
-      <Project v-for="project in projects" :key="project.title" :project="project" />
-
+      <Project
+        v-for="project in projects"
+        :key="project.title"
+        :project="project"
+      />
     </div>
     <Divider title="Kompetenzen" id="Kompetenzen" />
     <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 mb-40">
       <Experience title="UI/UX Design" />
-      <Experience title="Software Entwicklung" />
+      <Experience title="Web-Entwicklung" />
       <Experience title="Projekt Management" />
+      <Experience title="Design Thinking" />
+      <Experience title="Lean Startup" />
       <Experience title="Elektrotechnik" />
-      <Experience title="Projekt Management" />
-      <Experience title="Elektrotechnik" />
+      <Experience title="Azure Cloud" />
+      <Experience title="Vertrieb" />
+      <Experience title="Marktanalysen" />
     </div>
 
     <Divider title="Über mich" id="Über mich" />
     <div
       class="
         w-full
-
         mb-40
         inline-block
         md:flex md:flex-row md:flex-nowrap
@@ -49,7 +54,7 @@
         src="https://picsum.photos/400/400"
         class="h-120 w-full md:w-4/12 lg:w-3/12 max-h-80"
       />
-      <p class=" md:pt-0 md:pl-4 text-justify lg:w-5/12">
+      <p class="md:pt-0 md:pl-4 text-justify lg:w-5/12">
         Our working method practices a simultaneous exploration of traditional
         handicraft and cutting edge digital technology. Our working method
         practices a simultaneous exploration of traditional handicraft and
@@ -69,7 +74,7 @@
       </p>
     </div>
     <Divider title="Kontakt" id="Kontakt" />
-    <div class="text-center w-full flex flex-col justify-v´center ">
+    <div class="text-center w-full flex flex-col justify-v´center">
       <a class="underline mt-20" href="mailto:andreas.benz.privat@icloud.com"
         >andreas.benz.privat@icloud.com</a
       >
@@ -106,16 +111,18 @@ export default {
     return {
       projects: [
         {
-          image: "logo-aiyana",
-          title: "Etablierung einer ressourcenbasierten Ökonomie",
-          content:"Our working method practices a simultaneous exploration of traditional handicraft and cutting edge digital technology"
+          image: 'logo-aiyana',
+          title: 'Etablierung einer ressourcenbasierten Ökonomie',
+          content:
+            'Das Ziel meines 2016 gegründeten Startups Aiyana, war die Etablierung einer ressourcenbasierten Ökonomie mit Hilfe von künstlicher Intelligenz.',
         },
         {
-          image: "logo-red_assistant",
-          title: "Assistenzsystem für Covid-19 Impfstraßen",
-          content:"Our working method practices a simultaneous exploration of traditional handicraft and cutting edge digital technology"
-        }
-      ]
+          image: 'logo-red_assistant',
+          title: 'Digitales Assistenzsystem für Impfstraßen',
+          content:
+            'Das Ziel meines aktuellen Projekts ist die Optimierung interner Prozesse in Impfstraßen durch den Einsatz eines digitalen Assistenzsystem zu optimieren.',
+        },
+      ],
     }
   },
 }

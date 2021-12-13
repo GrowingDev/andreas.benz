@@ -8,7 +8,7 @@
     <p class="text-base ">
       {{project.content}}
     </p>
-    <a class="link w-max " href="https://google.com">read more &#8594;</a>
+    <a class="link w-max " href="https://google.com">mehr erfahren &#8594;</a>
   </div>
 </template>
 
