@@ -105,7 +105,7 @@ export default {
         {
           title: 'Analytisches Denken',
           description:
-            'Es fällt mir leicht, als Elektroniker für Energie und Gebäudetechnik, technische Zusammenhänge zu erkennen sowie verständlich zu erklären.',
+            'Als Elektroniker für Energie und Gebäudetechnik, kann ich technische Zusammenhänge rasch erkennen sowie verständlich erklären.',
         },
         {
           title: 'Software-Entwicklung',
