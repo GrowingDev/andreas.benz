@@ -29,15 +29,8 @@
     </div>
     <Divider title="Kompetenzen" id="Kompetenzen" />
     <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 mb-40">
-      <Experience title="UI/UX Design" />
-      <Experience title="Web-Entwicklung" />
-      <Experience title="Projekt Management" />
-      <Experience title="Design Thinking" />
-      <Experience title="Lean Startup" />
-      <Experience title="Elektrotechnik" />
-      <Experience title="Azure Cloud" />
-      <Experience title="Vertrieb" />
-      <Experience title="Marktanalysen" />
+      <Experience :title="skill.title" v-for="skill in skills" :key="skill.title"/>
+
     </div>
 
     <Divider title="Über mich" id="Über mich" />
@@ -109,18 +102,49 @@
 export default {
   data: () => {
     return {
+      skills: [
+        {
+          title: 'Web-Entwicklung',
+          content: 'Ich entwickle minimalistische Web-Anwendungen nach Maß',
+        },
+        {
+          title: 'UI/UX Design',
+          content:
+            'Gelungene UX bedeutet für mich, die exakten Wünsche des Kunden zu erfüllen.',
+        },
+        {
+          title: 'Agiles Projektmanagement',
+          content:
+            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+        },
+        {
+          title: 'Design Thinking',
+          content:
+            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+        },
+        {
+          title: 'Vertrieb',
+          content:
+            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+        },
+        {
+          title: 'Marktanalysen',
+          content:
+            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+        },
+      ],
       projects: [
         {
           image: 'logo-aiyana',
           title: 'Etablierung einer ressourcenbasierten Ökonomie',
           content:
-            'Das Ziel meines 2016 gegründeten Startups Aiyana, war die Etablierung einer ressourcenbasierten Ökonomie mit Hilfe von künstlicher Intelligenz.',
+            'Von 2016 bis 2020 suchte ich nach einem Weg, mit Hilfe der Digitalisierung eine ressourcenbasierte Ökonomie zu etablieren.',
         },
         {
           image: 'logo-red_assistant',
           title: 'Digitales Assistenzsystem für Impfstraßen',
           content:
-            'Das Ziel meines aktuellen Projekts ist die Optimierung interner Prozesse in Impfstraßen durch den Einsatz eines digitalen Assistenzsystem zu optimieren.',
+            'Derzeit arbeite ich an einem Konzept um interne Prozesse in Impfstraßen durch den Einsatz eines digitalen Assistenzsystem zu optimieren.',
         },
       ],
     }
