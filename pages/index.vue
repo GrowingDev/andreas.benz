@@ -28,7 +28,7 @@
       />
     </div>
     <Divider title="Kompetenzen" id="Kompetenzen" />
-    <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6 mb-40">
+    <div class="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-6 md:pt-10 lg:pt-20 mb-40">
       <Experience :skill="skill" v-for="skill in skills" :key="skill.title" />
     </div>
 
@@ -37,6 +37,8 @@
       class="
         w-full
         mb-40
+        md:pt-10
+        lg:pt-20
         inline-block
         md:flex md:flex-row md:flex-nowrap
         lg:justify-end
@@ -103,24 +105,34 @@ export default {
     return {
       skills: [
         {
-          title: 'Analytisches Denken',
+          title: 'Elektrotechnik',
           description:
-            'Als Elektroniker für Energie und Gebäudetechnik, kann ich technische Zusammenhänge rasch erkennen sowie verständlich erklären.',
+            'Ich verfüge ich über ein vielschichtiges Fachwissen in Elektrotechnik sowie über technisches Verständnis.',
         },
         {
-          title: 'Software-Entwicklung',
+          title: 'Informationstechnik',
           description:
-            'Ich entwickle mit Leidenschaft digitale Lösungen für die Probleme uns',
+            'Als Nerd, verfüge ich über sehr gute EDV Kenntnisse sowie über ein vielschichtiges Fachwissen in Informationstechnik.',
         },
         {
-          title: 'Agiles Projektmanagement',
+          title: 'Web-Entwicklung',
           description:
-            'Aufgrund meiner hohen Anpassungsfähigkeit reagiere ich schnell und zielgerichtet auf neue Herausforderungen.',
+            'Die Entwicklung von digitalen Lösungen für die Probleme unserer Zeit ist meine Leidenschaft.',
         },
         {
           title: 'Design Thinking',
           description:
             'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+        },
+               {
+          title: 'Projektmanagement',
+          description:
+            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+        },
+                 {
+          title: 'Analytisches Denken',
+          description:
+            'Dank meiner strukturierten und analytischen Arbeitsweise kann ich komplexer Problemstellungen schnell und gründlich erfasssen.',
         },
         {
           title: 'Vertrieb',
