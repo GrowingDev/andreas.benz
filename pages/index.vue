@@ -28,7 +28,19 @@
       />
     </div>
     <Divider title="Kompetenzen" id="Kompetenzen" />
-    <div class="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-6 md:pt-10 lg:pt-20 mb-40">
+    <div
+      class="
+        w-full
+        grid
+        md:grid-cols-2
+        lg:grid-cols-3
+        gap-4
+        xl:gap-6
+        md:pt-10
+        lg:pt-20
+        mb-40
+      "
+    >
       <Experience :skill="skill" v-for="skill in skills" :key="skill.title" />
     </div>
 
@@ -101,48 +113,52 @@
 
 <script>
 export default {
+  head() {
+      return {
+        title: "andreas.benz",
+        link: [{ rel:"stylesheet",  href:'/assets/fontawesome/css/all.css' }],
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'My custom description'
+          }
+        ]
+      }
+    },
   data: () => {
     return {
       skills: [
         {
-          title: 'Elektrotechnik',
+          title: 'Software-Entwicklung',
           description:
-            'Ich verfüge ich über ein vielschichtiges Fachwissen in Elektrotechnik sowie über technisches Verständnis.',
+            'Ich liebe benutzerfreundliche sowie selbsterklärende Software und entwickle mit Leidenschaft digitale Lösungen für die Probleme unserer Zeit.',
         },
         {
-          title: 'Informationstechnik',
+          title: 'IT&Elektrotechnik',
           description:
-            'Als Nerd, verfüge ich über sehr gute EDV Kenntnisse sowie über ein vielschichtiges Fachwissen in Informationstechnik.',
+            'Seit meiner Kindheit bin ich von den Möglichkeiten der Informationstechnik fasziniert und verfüge als Elektroniker für Energie- und Gebäudetechnik über ein breites Wissen in Elektrotechnik.',
         },
         {
-          title: 'Web-Entwicklung',
-          description:
-            'Die Entwicklung von digitalen Lösungen für die Probleme unserer Zeit ist meine Leidenschaft.',
-        },
-        {
-          title: 'Design Thinking',
-          description:
-            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
-        },
-               {
           title: 'Projektmanagement',
           description:
-            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
-        },
-                 {
-          title: 'Analytisches Denken',
-          description:
-            'Dank meiner strukturierten und analytischen Arbeitsweise kann ich komplexer Problemstellungen schnell und gründlich erfasssen.',
-        },
-        {
-          title: 'Vertrieb',
-          description:
-            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+            'Ich bin ein großer Fan von Lean Management und liebe es durch eine strukturierte und vorausschauende Planung, schnell und angemessen auf neue Herausforderungen reagieren zu können.',
         },
         {
           title: 'Marktanalysen',
           description:
-            'Durch meine hohe Anpassungsfähigkeit kann ich auf neue Herausforderungen schnell reagieren.',
+            'Meine Neugier gilt der Wirtschaft sowie neuen, nachhaltigen Innovationen, kann ich mich daher schnell und strukturiert in neue Themengebiete einarbeiten.',
+        },
+         {
+          title: 'Kundengespräche',
+          description:
+            'Mit einer gesunden Portion Selbstvertrauen sowie Einfühlungsvermögen gehe ich auf die Bedürfnisse von Kunden eingehen und kann Lösungen verständlich kommunizieren.',
+        },
+        {
+          title: 'Analytisches Denken',
+          description:
+            'Methoden wie Design Thinking und eine große Portion Kreativität, helfen mir schnell komplexe Zusammenhänge zu erkennen und Lösungen zu entwickeln.',
         },
       ],
       projects: [
@@ -161,6 +177,7 @@ export default {
       ],
     }
   },
+
 }
 </script>
 
