@@ -136,7 +136,7 @@ export default {
             'Ich liebe benutzerfreundliche sowie selbsterklärende Software und entwickle mit Leidenschaft digitale Lösungen für die Probleme unserer Zeit.',
         },
         {
-          title: 'IT&Elektrotechnik',
+          title: 'IT & Elektrotechnik',
           description:
             'Seit meiner Kindheit bin ich von den Möglichkeiten der Informationstechnik fasziniert und verfüge als Elektroniker für Energie- und Gebäudetechnik über ein breites Wissen in Elektrotechnik.',
         },
@@ -153,7 +153,7 @@ export default {
          {
           title: 'Kundengespräche',
           description:
-            'Mit einer gesunden Portion Selbstvertrauen sowie Einfühlungsvermögen gehe ich auf die Bedürfnisse von Kunden eingehen und kann Lösungen verständlich kommunizieren.',
+            'Mit einer gesunden Portion Selbstvertrauen sowie Einfühlungsvermögen gehe ich auf die Bedürfnisse von Kunden ein und kann Lösungen verständlich kommunizieren.',
         },
         {
           title: 'Analytisches Denken',

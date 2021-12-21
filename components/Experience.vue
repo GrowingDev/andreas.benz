@@ -2,7 +2,7 @@
   <div class="w-full pb-10 flex flex-col justify-start text-start items-start">
     <div class="max-w-max mb-2 pb-2">
       <svg
-        v-if="skill.title == 'IT&Elektrotechnik'"
+        v-if="skill.title == 'IT & Elektrotechnik'"
         aria-hidden="true"
         class="icon"
         focusable="false"
