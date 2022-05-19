@@ -11,31 +11,39 @@
       justify-start
     "
   >
-    <NavigationBar />
-
     <div class="container h-screen w-full flex flex-col justify-center">
-      <h1>
+      <h1 class="cssanimation" data-aos="'fadeInBottom'">
         Ich liebe Minimalismus, neue Technologien, Nachhaltigkeit und coole
         Projekte.
       </h1>
     </div>
-    <Divider title="Projekte" id="Projekte" />
-    <div class="w-full flex flex-row flex-wrap justify-end mb-40 w-min-screen">
+    <divider title="Projekte" id="Projekte" />
+    <div
+      class="
+        w-full
+        flex flex-col
+        lg:grid lg:grid-cols-2
+        xl:grid-cols-3
+        gap-10
+        mb-40
+        md:pt-10
+        lg:pt-20
+      "
+    >
       <Project
         v-for="project in projects"
         :key="project.title"
         :project="project"
       />
     </div>
-    <Divider title="Kompetenzen" id="Kompetenzen" />
+    <divider title="Kompetenzen" id="Kompetenzen" />
     <div
       class="
         w-full
         grid
         md:grid-cols-2
         lg:grid-cols-3
-        gap-4
-        xl:gap-6
+        gap-10
         md:pt-10
         lg:pt-20
         mb-40
@@ -44,7 +52,7 @@
       <Experience :skill="skill" v-for="skill in skills" :key="skill.title" />
     </div>
 
-    <Divider title="Über mich" id="Über mich" />
+    <divider title="Über mich" id="Über mich" />
     <div
       class="
         w-full
@@ -57,36 +65,68 @@
       "
     >
       <img
-        src="https://picsum.photos/400/400"
-        class="h-120 w-full md:w-4/12 lg:w-3/12 max-h-80"
+        id="profile-picture"
+        :src="require(`~/assets/imgs/me.jpg`)"
+        class="
+          flex-1
+          w-full
+          object-cover
+          max-h-72
+          lg:max-w-sm lg:object-none lg:max-h-full
+        "
       />
-      <p class="md:pt-0 md:pl-4 text-justify lg:w-5/12">
-        Our working method practices a simultaneous exploration of traditional
-        handicraft and cutting edge digital technology. Our working method
-        practices a simultaneous exploration of traditional handicraft and
-        cutting edge digital technology.
-        <br />
-        <br />
-        Our working method practices a simultaneous exploration of traditional
-        handicraft and cutting edge digital technology. Our working method
-        practices a simultaneous exploration of traditional handicraft and
-        cutting edge digital technology.
-        <br />
-        <br />
-        Our working method practices a simultaneous exploration of traditional
-        handicraft and cutting edge digital technology. Our working method
-        practices a simultaneous exploration of traditional handicraft and
-        cutting edge digital technology
-      </p>
+
+      <div class="flex flex-col mt-4 md:mt-0 md:pl-4 lg:w-6/12 flex-1">
+        <p class="text-justify">
+          Ich wurde am 28.05.89 in Würzburg, Deutschland geboren. Meine Liebe
+          zur IT & Elektrotechnik begann bereits in meiner Kindheit mit dem
+          Eigenbau einer mobilen Jukebox, bestehend aus einem Schminkkoffer,
+          alten PC-Lautsprechern und Einzelteilen eines alten Kofferradios.
+          <br />
+          <br />
+          Einige Jahre später habe ich die Ausbildung zum Elektroniker für
+          Energie und Gebäudetechnik erfolgreich abgeschlossen und sammelte in
+          meiner Freizeit die ersten Erfahrungen mit HTML, CSS sowie JavaScript.
+          <br />
+          <br />
+          So richtig ernst wurde es mit der IT als ich 2016 vor dem damaligen
+          Gremium der
+          <a href="https://www.innovation4x.com/">Innovationsplatform I4.X</a>
+          meine damalige Idee einer autonomen sowie ressourcenbasierten Ökonomie
+          präsentieren durfte. Nach einem überwältigendem Feedback und einer
+          gehörigen Portion Naivität, entschloss ich mich dazu ein eigenes
+          Startup zu gründen und jede freie Minute für die Weiterentwicklung
+          meiner Fähigkeiten sowie Kenntnisse im Bereich der
+          Software-Entwicklung zu nutzen.
+          <br />
+          <br />
+          Letzten Endes führte mich dieses Abenteuer nach Österreich, genauer
+          gesagt in die Stadt Linz, welche ich voller Stolz meine neue Heimat
+          nennen darf.
+          <br />
+          <br />
+          In meiner Freizeit gehe ich gerne rudern, spiele Schach und
+          interessiere mich für die Themen Nachhaltigkeit, Wirtschaft, Politik
+          und Raumfahrt.
+        </p>
+        <a
+          class="link w-max mt-2"
+          href="https://andreasbenz.org/public/AndreasBenz_Lebenslauf.pdf"
+          >zum lebenslauf &#8594;</a
+        >
+      </div>
     </div>
-    <Divider title="Kontakt" id="Kontakt" />
-    <div class="text-center w-full flex flex-col justify-v´center">
-      <a class="underline mt-20" href="mailto:andreas.benz.privat@icloud.com"
-        >andreas.benz.privat@icloud.com</a
+
+    <divider title="Kontakt" id="Kontakt" />
+    <div class="text-center w-full flex flex-col justify-center">
+      <a class="underline mt-20" href="mailto:contact.andreasbenz@org"
+        >contact@andreasbenz.org</a
       >
       <a href="tel:+436706045373" class="mt-10">+ 43 670 6045373</a>
       <div class="w-full flex flex-row justify-center mt-10 mb-40">
-        <a class="p-2" href="https://www.linkedin.com/in/andreas-benz-91320a213"
+        <a
+          class="p-2"
+          href="https://www.linkedin.com/in/andreas-benz-927b08113/"
           ><svg
             class="w-10 h-auto"
             xmlns="http://www.w3.org/2000/svg"
@@ -112,45 +152,81 @@
 </template>
 
 <script>
+import Divider from '~/components/Divider.vue'
+import aosMixin from '~/mixins/aos'
 export default {
+  name: 'index',
+  mixins: [aosMixin],
+  components: { Divider },
+
   head() {
-      return {
-        title: "andreas.benz",
-        link: [{ rel:"stylesheet",  href:'/assets/fontawesome/css/all.css' }],
-        meta: [
-          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'My custom description'
-          }
-        ]
-      }
-    },
+    return {
+      title: 'andreas.benz',
+    }
+  },
   data: () => {
     return {
-      skills: [
+      projects: [
         {
-          title: 'Software-Entwicklung',
-          description:
-            'Ich liebe benutzerfreundliche sowie selbsterklärende Software und entwickle mit Leidenschaft digitale Lösungen für die Probleme unserer Zeit.',
+          image: 'shop',
+          title: 'Remichel CashClip',
+          content:
+            'Im Auftrag des Unternehmens Remichel entwickelte ich 2020 einen Online-Shop. Hierbei wurden unter anderem Vue.js und Tailwindcss eingesetzt.',
+          link: 'https://www.shop.andreasbenz.org',
+          techstack: [
+            'Vue.js',
+            'tailwindcss',
+            'Node.js',
+            'Apollo GraphQL',
+            'MongoDB',
+          ],
         },
         {
-          title: 'IT & Elektrotechnik',
+          image: 'erp',
+          title: 'Remichel ERP',
+          content:
+            'Parallel zur Entwicklung des Online-Shops entwickelte ich für das Unternehmen Remichel ein Warenwirtschaftssystem. Zum Einsatz kam unter anderem Node.js und GraphQl.',
+          link: 'https://www.erp.andreasbenz.org',
+          techstack: [
+            'Vue.js',
+            'tailwindcss',
+            'Node.js',
+            'Apollo GraphQL',
+            'MongoDB',
+          ],
+        },
+        {
+          image: 'tac',
+          title: 'TeleAgriCulture',
+          content:
+            'Für das vom Linzer Klimafond geförderte Startup TeleAgriCulture bin ich derzeit für die Weiterentwicklung der mobilen App verantwortlich. FÜr die Umsetzung kamen React.js sowie P5.js zum Einsatz.',
+          link: 'https://teleagriculture.org/',
+          techstack: ['React.js', 'tailwindcss', 'p5.js'],
+        },
+      ],
+      skills: [
+        {
+          title: 'Full Stack Development',
           description:
-            'Seit meiner Kindheit bin ich von den Möglichkeiten der Informationstechnik fasziniert und verfüge als Elektroniker für Energie- und Gebäudetechnik über ein breites Wissen in Elektrotechnik.',
+            'Ich liebe benutzerfreundliche sowie selbsterklärende Web-Anwendungen und entwickle mit Leidenschaft digitale Lösungen für die Probleme unserer Zeit.',
+        },
+        {
+          title: 'Web Frameworks',
+          description:
+            'In meinen Projekten verwende ich stets neueste Technologien. Hierzu gehören unter anderem Frameworks wie React.js, Vue.js und Angular.js.',
+        },
+        {
+          title: 'UI/UX Design',
+          description:
+            'Eine solide Kundenanalyse sowie die Beachtung psychologischer Wirkfaktoren, bilden das Fundament einer erfolgreichen Gestaltung.',
         },
         {
           title: 'Projektmanagement',
           description:
             'Ich bin ein großer Fan von Lean Management und liebe es durch eine strukturierte und vorausschauende Planung, schnell und angemessen auf neue Herausforderungen reagieren zu können.',
         },
+
         {
-          title: 'Marktanalysen',
-          description:
-            'Meine Neugier gilt der Wirtschaft sowie neuen, nachhaltigen Innovationen, kann ich mich daher schnell und strukturiert in neue Themengebiete einarbeiten.',
-        },
-         {
           title: 'Kundengespräche',
           description:
             'Mit einer gesunden Portion Selbstvertrauen sowie Einfühlungsvermögen gehe ich auf die Bedürfnisse von Kunden ein und kann Lösungen verständlich kommunizieren.',
@@ -161,24 +237,18 @@ export default {
             'Methoden wie Design Thinking und eine große Portion Kreativität, helfen mir schnell komplexe Zusammenhänge zu erkennen und Lösungen zu entwickeln.',
         },
       ],
-      projects: [
-        {
-          image: 'logo-aiyana',
-          title: 'Etablierung einer ressourcenbasierten Ökonomie',
-          content:
-            'Von 2016 bis 2020 suchte ich nach einem Weg, mit Hilfe der Digitalisierung eine ressourcenbasierte Ökonomie zu etablieren.',
-        },
-        {
-          image: 'logo-red_assistant',
-          title: 'Digitales Assistenzsystem für Impfstraßen',
-          content:
-            'Derzeit arbeite ich an einem Konzept um interne Prozesse in Impfstraßen durch den Einsatz eines digitalen Assistenzsystem zu optimieren.',
-        },
-      ],
     }
   },
-
 }
 </script>
 
-<style></style>
+<style>
+p {
+  direction: ltr;
+  hyphens: auto;
+}
+#profile-picture {
+  width: 100%;
+  height: auto;
+}
+</style>
