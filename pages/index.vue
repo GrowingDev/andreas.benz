@@ -111,7 +111,7 @@
         </p>
         <a
           class="link w-max mt-2"
-          href="https://andreasbenz.org/public/AndreasBenz_Lebenslauf.pdf"
+          href="https://drive.google.com/drive/folders/1qFEDizMr7xanKgzs7KMGBV3S33HzKcqD?usp=sharing"
           >zum lebenslauf &#8594;</a
         >
       </div>
