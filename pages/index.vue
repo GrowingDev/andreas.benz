@@ -119,7 +119,7 @@
 
     <divider title="Kontakt" id="Kontakt" />
     <div class="text-center w-full flex flex-col justify-center">
-      <a class="underline mt-20" href="mailto:contact.andreasbenz@org"
+      <a class="underline mt-20" href="mailto:contact@andreasbenz.org"
         >contact@andreasbenz.org</a
       >
       <a href="tel:+436706045373" class="mt-10">+ 43 670 6045373</a>
