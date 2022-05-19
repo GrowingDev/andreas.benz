@@ -13,7 +13,7 @@
     "
   >
     <div class="flex justify-between items-center container mx-auto">
-      <a>andreas.benz</a>
+      <a>andreasbenz</a>
       <div class="hidden md:flex justify-between items-center space-x-5">
         <a
           class="link lowercase"
