@@ -199,7 +199,7 @@ export default {
           image: 'tac',
           title: 'TeleAgriCulture',
           content:
-            'Für das vom Linzer Klimafond geförderte Startup TeleAgriCulture bin ich derzeit für die Weiterentwicklung der mobilen App verantwortlich. FÜr die Umsetzung kamen React.js sowie P5.js zum Einsatz.',
+            'Für das vom Linzer Klimafond geförderte Startup TeleAgriCulture bin ich derzeit für die Weiterentwicklung der mobilen App verantwortlich. Für die Umsetzung kamen React.js sowie P5.js zum Einsatz.',
           link: 'https://teleagriculture.org/',
           techstack: ['React.js', 'tailwindcss', 'p5.js'],
         },
