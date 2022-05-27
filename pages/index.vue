@@ -122,7 +122,7 @@
       <a class="underline mt-20" href="mailto:contact@andreasbenz.org"
         >contact@andreasbenz.org</a
       >
-      <a href="tel:+436706045373" class="mt-10">+ 43 670 6045373</a>
+      <a href="tel:+43 677 642 638 37" class="mt-10">+ 43 670 6045373</a>
       <div class="w-full flex flex-row justify-center mt-10 mb-40">
         <a
           class="p-2"
